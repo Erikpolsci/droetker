@@ -10,21 +10,13 @@ body {
     margin: 0;
     padding: 0;
     background:url("waldemar-brandt-rhaS97NhnHg-unsplash.jpg") no-repeat;
-    /* background: rgb(244, 245, 245);
-  background: linear-gradient(142deg, rgba(244, 245, 245, 1) 0%, rgba(15, 33, 220, 1) 11%, rgba(16, 40, 213, 1) 45%, rgba(13, 5, 249, 1) 54%); */
     font-family: 'Roboto';
-    font-size: 1.3em;
+    font-size: 1.3rem;
     line-height: 1em;
     width: 100vw;
-    height: 100vh
+    height: 100vw;
 }
 
-/* .logo{
-display: flex;
-align-items: flex-end;
-padding-left: 260px;
-
-} */
 .topo {
     height: 50px;
     display: flex;
@@ -40,23 +32,30 @@ padding-left: 260px;
 
 .container {
     max-width: 640px;
-    margin: 50px auto;
+    /* margin: 50px auto; */
     background: #fff;
-    padding: 20px;
+    padding: 25px;
     border-radius: 10px;
+    position: relative;
+    /* width: 940px; */
+    margin: 0 auto;
+    margin-top: 50px;
+    
+    
 }
 
 p {
     padding-top: 50px;
+    font-size: 1.5rem;
 }
 
 .information {
     display: flex;
     flex-direction: column;
-    padding-top: 50px;
+    padding-top: 40px;
     justify-content: space-between;
     align-items: left;
-    font-size: 0.9em;
+    font-size: 1.2rem;
 
 
 }
@@ -71,9 +70,10 @@ form button {
 
 form input {
 
-    font-size: 24px;
+    font-size: 0.9rem;
     height: 50px;
-    padding: 0 20px;
+    padding: 0 10px;
+    margin-top: -15px;
     border-radius: 5px;
 }
 
@@ -98,4 +98,30 @@ form button {
 
 form button:hover {
     background: rgb(4, 4, 134);
+}
+
+
+@media screen and (max-width: 480px){
+    .container, .section{
+        width: auto;
+        margin: 20px;  
+         
+       
+    }
+
+    div.topo{
+        width: auto;
+        
+    }
+
+    p.paragrafo {
+        font-size: 1.2rem;
+        padding-top: 20px;
+        text-align: center;
+        
+    }
+
+    img {
+        padding-left: 80px;
+    }
 }
