@@ -24,10 +24,11 @@ body {
     margin-top: 10px;
     justify-content: center;
     background-color: blue;
-    border: solid;
-    border-color: black;
+    /* border: solid;
+    border-color: black; */
     border-radius: 10px;
-    color: white
+    color: white;
+    box-shadow: 10px 8px 5px black;
 }
 
 .container {
@@ -111,6 +112,7 @@ form button:hover {
 
     div.topo{
         width: auto;
+
         
     }
 
