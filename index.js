@@ -66,8 +66,8 @@ function setResult(showmsg, isValid){
 	const result = document.querySelector('#result');
 	result.innerHTML = '';
 
-	const p = creatP();
-    p.classList.add('result')	
+	// const p = creatP();
+    // p.classList.add('result')	
 
 	p.innerHTML = showmsg
 	result.appendChild(p);
