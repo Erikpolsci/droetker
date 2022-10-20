@@ -110,8 +110,8 @@ form button:hover {
     background-color: rgba(14, 97, 17, 0.527);
   }
 
-/* @media screen and (max-width: 480px){
-    .container, .section{
+@media screen and (max-width: 480px){
+    .container, .section, .result{
         width: auto;
         margin: 20px;  
          
@@ -134,4 +134,4 @@ form button:hover {
     img {
         padding-left: 80px;
     }
-} */
+}
