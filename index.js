@@ -67,7 +67,7 @@ function setResult(showmsg, isValid){
 	result.innerHTML = '';
 
 	const p = creatP();
-    // p.classList.add('result')// 	
+    p.classList.add('result')// 	
 
 	p.innerHTML = showmsg
 	result.appendChild(p);

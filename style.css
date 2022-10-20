@@ -101,14 +101,16 @@ form button:hover {
     background: rgb(4, 4, 134);
 }
 
-/* .result{
+
+
+.result{
     background: rgb(128, 236, 146);
     padding: 10px 20px ;
     text-align: center;
     background-color: rgba(14, 97, 17, 0.527);
-  } */
+  }
 
-@media screen and (max-width: 480px){
+/* @media screen and (max-width: 480px){
     .container, .section{
         width: auto;
         margin: 20px;  
@@ -132,4 +134,4 @@ form button:hover {
     img {
         padding-left: 80px;
     }
-}
+} */
