@@ -1,53 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Dr.Oetker Cases Calc</title>
-</head>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="style-home.css">
 
+    <title>Cases and Boxes Calc</title>
+</head>
 <body>
     <section class="container">
+        <h1>What would you like to calculate?</h1>
 
-        <img clas="img" src="1200px-Dr._Oetker-Logo.svg.png">
-        <div class="topo">
-            <h1>Cases Calculator</h1>
-        </div>
-        
+<ul>
+    <li><button class="button"><a href="CasesCalc.html">Pallets of Cases Needed</a></button></li>
+    <li><button class="button"><a href="BoxesCalc.html">Pallets of Boxes Needed</a></button></li>
+</ul>
 
+<div>
+    <img clas="img" src="1200px-Dr._Oetker-Logo.svg.png">
 
-        <section class="section">
-            <p class="paragrafo">Insert the required information below:</p>
-            <div class="information">
-               
-                <form class="form" id="form">
-                    <label for="pph">Pizza Per Hour (PPH)</label>
-                    <input type=" " id="pph" class="pph" placeholder="insert PPH">
+</div>
 
-                    <label for="bpc">Pizzas Boxes Per Case (BPC)</label>
-                    <input type=" " id="bpc" class="bpc" placeholder="insert BPC ">
+    </section>
 
-                    <label for="cpp">Cases Per Pallet (CPP)</label>
-                    <input type=" " id="cpp" class="cpp" placeholder="insert CPP">
-
-                    <label for="phl">Production Hours Left (PHL)</label>
-                    <input type=" " id="phl" class="phl" placeholder="insert PHL ">
-
-                    
+    
 
 
-                    <button type="submit" class="calculate">Calculate </button>
-                </form>
-            </div>
 
-            <div id="result"></div>
-        </section>
-        <script src="index.js">
-            document.body.innerHTML  = `Pallets of Cases Needed:`
-           </script>
+    
 </body>
-
 </html>
