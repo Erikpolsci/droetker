@@ -104,10 +104,11 @@ form button:hover {
 
 
 .result{
-    background: rgb(128, 236, 146);
+    color: white;
     padding: 10px 20px ;
     text-align: center;
-    background-color: rgba(14, 97, 17, 0.527);
+    font-weight: 600;
+    background-color: red;
   }
 
 @media screen and (max-width: 480px){
