@@ -4,14 +4,12 @@ form.addEventListener('submit', function (event){
 	event.preventDefault();
 	const inputPph = event.target.querySelector('#pph');
 	const inputPhl = event.target.querySelector('#phl');
-    const inputBpc = event.target.querySelector('#bpc');
-	const inputCpp = event.target.querySelector('#cpp');
+	const inputBpp = event.target.querySelector('#bpp');
 
 
 	const pph = Number(inputPph.value);
 	const phl = Number(inputPhl.value);
-    const bpc = Number(inputBpc.value);
-	const cpp = Number(inputCpp.value);
+	const bpp = Number(inputBpp.value);
 
 
 	if (!pph) {
@@ -24,22 +22,18 @@ form.addEventListener('submit', function (event){
 		return;
 	}
 
-    if (!bpc) {
-		setResult('Invalid value', false);
-		return;
-	}
 
-    if (!cpp) {
+    if (!bpp) {
 		setResult('Invalid value', false);
 		return;
 	}
 
 	
 
-	const cases = getCases(pph, bpc,cpp,phl);
+	const boxes = getBoxes(pph,bpp,phl);
     
 
-	const showmsg = `Pallets of Cases Needed: ${cases}`;
+	const showmsg = `Pallets of Boxes Needed: ${boxes}`;
 
 
 	setResult(showmsg, true)
@@ -50,10 +44,10 @@ form.addEventListener('submit', function (event){
 });
 
 
-function getCases(pph, bpc,cpp,phl){
-	const cases = (pph / bpc) / cpp * phl; 
-    console.log(cases);
-	return cases.toFixed(2);
+function getBoxes(pph,bpp,phl){
+	const boxes = (pph * phl) / bpp; 
+    console.log(boxes);
+	return boxes.toFixed(2);
    
 }
 
