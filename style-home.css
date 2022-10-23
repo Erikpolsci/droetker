@@ -110,6 +110,12 @@ div {
     }
 
     .button{
+        height: 75px;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .button{
         height: 100px;
     }
 }
